@@ -37,6 +37,10 @@
                     <label>Warning seconds</label>
                     <comment>Time remaining in seconds before the session expires, prompting a popup notification for the user.</comment>
                 </field>
+                <field id="redirect_url" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Redirect Url</label>
+                    <comment>Automatically redirect to this url after the session expire. Ex. https://www.example.com. If you don't want to redirect, leave empty.</comment>
+                </field>
             </group>
         </section>
     </system>

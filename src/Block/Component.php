@@ -25,6 +25,8 @@ class Component extends Template
 
     const XPATH_NANOBOTS_SESSION_TIMEOUT_WARNING = 'nanobots/sessionLifetimePopup/seconds_warning';
 
+    const XPATH_NANOBOTS_SESSION_REDIRECT_URL = 'nanobots/sessionLifetimePopup/redirect_url';
+
     /**
      * @return int
      */
@@ -76,6 +78,17 @@ class Component extends Template
     {
         return (string) $this->_scopeConfig->getValue(
             self::XPATH_NANOBOTS_SESSION_BUTTON_TITLE,
+            ScopeInterface::SCOPE_STORE
+        );
+    }
+
+    /**
+     * @return string
+     */
+    public function getRedirectUrl(): string
+    {
+        return (string) $this->_scopeConfig->getValue(
+            self::XPATH_NANOBOTS_SESSION_REDIRECT_URL,
             ScopeInterface::SCOPE_STORE
         );
     }
