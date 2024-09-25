@@ -28,7 +28,8 @@ define(
                 loginButtonTitle: 'Login',
                 activeMethod: '',
                 sessionLifetime: 60,
-                sessionTimeoutWarning: 30
+                sessionTimeoutWarning: 30,
+                redirectUrl: ''
             },
 
             initializeOverlayEvents: function () {
@@ -136,6 +137,10 @@ define(
              * @returns {boolean}
              */
             isSessionTimedOut: function () {
+                if(timer.sessionTimedOut() && this.redirectUrl) {
+                    window.location.href = this.redirectUrl;
+                }
+
                 return timer.sessionTimedOut();
             },
 
