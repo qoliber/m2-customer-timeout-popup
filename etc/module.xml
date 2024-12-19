@@ -3,16 +3,17 @@
 /**
  * Created by Q-Solutions Studio
  *
- * @category    Nanobots
- * @package     Nanobots_SessionTimeoutPopup
- * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Nanobots_SessionTimeoutPopup">
+    <module name="Qoliber_SessionTimeoutPopup">
         <sequence>
             <module name="Magento_Customer"/>
+            <module name="Qoliber_Core"/>
         </sequence>
     </module>
 </config>

@@ -1,9 +1,9 @@
 /**
  * Created by Q-Solutions Studio
  *
- * @category    Nanobots
- * @package     Nanobots_SessionTimeoutPopup
- * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
  */
 define(
     [
@@ -13,7 +13,7 @@ define(
         'uiComponent',
         'Magento_Customer/js/customer-data',
         'Magento_Ui/js/modal/modal',
-        'Nanobots_SessionTimeoutPopup/js/model/timer'
+        'Qoliber_SessionTimeoutPopup/js/model/timer'
     ],
     function ($, ko, urlBuilder, Component, customerData, modal, timer) {
         'use strict';

@@ -3,14 +3,14 @@
 /**
  * Created by Q-Solutions Studio
  *
- * @category    Nanobots
- * @package     Nanobots_SessionTimeoutPopup
- * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <nanobots>
+        <qoliber>
             <sessionLifetimePopup>
                 <enabled>1</enabled>
                 <title><![CDATA[You will be logged out in:]]></title>
@@ -18,6 +18,6 @@
                 <button_title><![CDATA[Login]]></button_title>
                 <seconds_warning>300</seconds_warning>
             </sessionLifetimePopup>
-        </nanobots>
+        </qoliber>
     </default>
 </config>

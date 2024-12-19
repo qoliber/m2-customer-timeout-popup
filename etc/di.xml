@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ *
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Qoliber\SessionTimeoutPopup\Api\UpdateSessionInterface"
+                type="Qoliber\SessionTimeoutPopup\Model\UpdateSession"/>
+</config>

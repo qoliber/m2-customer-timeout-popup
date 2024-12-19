@@ -2,32 +2,26 @@
 /**
  * Created by Q-Solutions Studio
  *
- * @category    Nanobots
- * @package     Nanobots_SessionTimeoutPopup
- * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
  */
 
 declare(strict_types=1);
 
-namespace Nanobots\SessionTimeoutPopup\Model;
+namespace Qoliber\SessionTimeoutPopup\Model;
 
 use Magento\Customer\Model\Session;
-use Nanobots\SessionTimeoutPopup\Api\UpdateSessionInterface;
+use Qoliber\SessionTimeoutPopup\Api\UpdateSessionInterface;
 
 class UpdateSession implements UpdateSessionInterface
 {
-    /**
-     * @param \Magento\Customer\Model\Session $customerSession
-     */
     public function __construct(
         protected Session $customerSession
     ) {
 
     }
 
-    /**
-     * @return void
-     */
     public function bulkRequest(): void
     {
         $this->customerSession->regenerateId();

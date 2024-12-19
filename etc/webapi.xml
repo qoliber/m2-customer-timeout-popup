@@ -3,14 +3,14 @@
 /**
  * Created by Q-Solutions Studio
  *
- * @category    Nanobots
- * @package     Nanobots_SessionTimeoutPopup
- * @author      Jakub Winkler <jwinkler@qsolutionsstudio.com>
+ * @category    Qoliber
+ * @package     Qoliber_SessionTimeoutPopup
+ * @author      Jakub Winkler <jwinkler@qoliber.com>
  */
  -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/V1/customer/prolongSession" method="GET">
-        <service class="Nanobots\SessionTimeoutPopup\Api\UpdateSessionInterface" method="bulkRequest"/>
+        <service class="Qoliber\SessionTimeoutPopup\Api\UpdateSessionInterface" method="bulkRequest"/>
         <resources>
             <resource ref="Magento_Customer::customer_self" />
         </resources>
